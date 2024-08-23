@@ -1,5 +1,10 @@
 .main-nav {
   background-color: #fff;
+  margin-bottom: 41px;
+
+  @media (min-width: 1727px) {
+    margin-bottom: 226px;
+  }
 
   &__container {
     display: flex;
@@ -59,8 +64,13 @@
   }
 
   &__menu--showed {
-    display: flex;
+    display: none;
     flex-direction: column;
+
+    @media(min-width: 767px) {
+      display: flex;
+      z-index: 1001;
+    }
   }
 
   &__navigation {
@@ -136,7 +146,7 @@
 
     a {
       padding: 6px;
-      
+
       @media (min-width: 767px) {
         padding: 28px 24px;
       }
@@ -152,7 +162,6 @@
 
     display: flex;
     position: relative;
-    margin-right: 26px;
     z-index: 1001;
 
     @media (min-width: 767px) {
@@ -163,7 +172,7 @@
     .main-nav__search {
       @include clear-button;
 
-      margin-right: 29px;
+      margin-right: 25px;
 
         @media (min-width: 767px) {
           margin-right: 44px;
@@ -173,7 +182,7 @@
     .main-nav__basket {
       @include clear-button;
 
-      margin-right: 21px;
+      margin-right: 25px;
 
       @media (min-width: 767px) {
         margin-right: 0;
@@ -198,7 +207,7 @@
       align-items: center;
       justify-content: center;
       top: -3px;
-      right: 13px;
+      right: 18px;
       border-radius: 13px;
       background-color: #D9D9D9;
       color: #000000;
@@ -207,7 +216,7 @@
       line-height: 8px;
 
       @media (min-width: 767px) {
-        right: -5px;
+        right: -9px;
         min-width: 18px;
         height: 18px;
         font-size: 11px;
@@ -219,6 +228,8 @@
   &__burger {
     @include clear-button;
 
-    display: none;
+    @media (min-width: 767px) {
+      display: none;
+    }
   }
 }
