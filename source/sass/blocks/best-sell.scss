@@ -167,8 +167,7 @@
         content: 'Hot!';
         font-size: 18px;
         font-weight: 500;
-        margin-top: 32px;
-        margin-left: -44px;
+        transform: translate(-44px, 32px);
         border-radius: 0 3px 3px 0;
         width: 59px;
         height: 32px;
@@ -180,12 +179,11 @@
           width: 120px;
           height: 65px;
           font-size: 36px;
-          margin-left: -129px;
-          margin-top: 104px;
+          transform: translate(-129px, 104px);
         }
 
         @media(min-width: 1728px) {
-          margin-left: -135px;
+          transform: translate(-135px, 104px);
         }
       }
     }
@@ -196,8 +194,7 @@
         position: absolute;
         font-size: 18px;
         font-weight: 500;
-        margin-top: -300px;
-        margin-left: -150px;
+        transform: translate(-150px, -300px);
         border-radius: 0 3px 3px 0;
         width: 59px;
         height: 32px;
@@ -207,13 +204,11 @@
         box-shadow: 8px 7px 16.1px 0px #00000040;
 
         @media(min-width: 768px) {
-          margin-top: -340px;
-          margin-left: -170px;
+          transform: translate(-170px, -340px);
         }
 
         @media(min-width: 1728px) {
-          margin-top: -470px;
-          margin-left: -249px;
+          transform: translate(-250px, -470px);
         }
       }
     }

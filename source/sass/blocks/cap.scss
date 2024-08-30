@@ -178,11 +178,11 @@
       }
 
       @media (min-width: 1728px) {
-        transform: rotate(270deg);
+        transform: rotate(270deg) translateY(-884px);
         width: 949px;
         height: 141px;
-        left: -46%;
-        top: 46%;
+        top: 44%;
+        left: 480px;
         background-size: 90%;
       }
     }
