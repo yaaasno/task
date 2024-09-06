@@ -54,16 +54,8 @@
     }
 
     .best-sell__male {
-      @include clear-button;
-
-      background-color: #000000;
-      border: 2px solid;
-      border-color: #000000;
-      color: #fff;
       margin-right: 18px;
       padding: 8px 38px;
-      font-size: 14px;
-      font-weight: 500;
       line-height: 19px;
 
       @media (min-width: 1728px) {
@@ -72,15 +64,7 @@
     }
 
     .best-sell__female {
-      @include clear-button;
-
-      background-color: #fff;
-      border: 2px solid;
-      border-color: rgb(#000000, 0.75);
-      color: rgb(#000000, 0.75);
       padding: 8px 38px;
-      font-size: 14px;
-      font-weight: 500;
       line-height: 19px;
     }
 
@@ -159,57 +143,56 @@
       grid-row: 1 / 3;
       width: auto;
     }
+  }
 
-    &--hot{
-      &::before {
-        background-image: url(../source/img/hot.svg);
-        position: absolute;
-        content: 'Hot!';
-        font-size: 18px;
-        font-weight: 500;
-        transform: translate(-44px, 32px);
-        border-radius: 0 3px 3px 0;
-        width: 59px;
-        height: 32px;
-        background-color: #DA4B54;
-        color: #fff;
-        box-shadow: 8px 7px 16px 0 #00000040;
+  &__point--hot {
+    &::before {
+      background: url(../img/hot.svg) no-repeat;
+      position: absolute;
+      content: 'Hot!';
+      font-size: 18px;
+      font-weight: 500;
+      transform: translate(-44px, 32px);
+      width: 59px;
+      height: 32px;
+      color: #fff;
+      filter: drop-shadow(8px 7px 16px #00000040);
 
-        @media(min-width: 768px) {
-          width: 120px;
-          height: 65px;
-          font-size: 36px;
-          transform: translate(-129px, 104px);
-        }
+      @media(min-width: 768px) {
+        width: 120px;
+        height: 65px;
+        font-size: 36px;
+        transform: translate(-129px, 104px);
+        background-size: 100%;
+      }
 
-        @media(min-width: 1728px) {
-          transform: translate(-135px, 104px);
-        }
+      @media(min-width: 1728px) {
+        transform: translate(-135px, 104px);
       }
     }
+  }
 
-    &--new{
-      &::after {
-        content: 'New';
-        position: absolute;
-        font-size: 18px;
-        font-weight: 500;
-        transform: translate(-150px, -300px);
-        border-radius: 0 3px 3px 0;
-        width: 59px;
-        height: 32px;
-        border: 1px solid #000000;
-        background-color: #000000;
-        color: #fff;
-        box-shadow: 8px 7px 16.1px 0px #00000040;
+  &__point--new {
+    &::after {
+      background: url(../img/new.svg) no-repeat;
+      position: absolute;
+      content: 'New';
+      font-size: 18px;
+      font-weight: 500;
+      transform: translate(-150px, -300px);
+      width: 59px;
+      height: 35px;
+      background-position: -7px -8px;
+      padding-top: 4px;
+      color: #fff;
+      filter: drop-shadow(8px 7px 16px #00000040);
 
-        @media(min-width: 768px) {
-          transform: translate(-170px, -340px);
-        }
+      @media(min-width: 768px) {
+        transform: translate(-172px, -300px);
+      }
 
-        @media(min-width: 1728px) {
-          transform: translate(-250px, -470px);
-        }
+      @media(min-width: 1728px) {
+        transform: translate(-250px, -470px);
       }
     }
   }
@@ -225,182 +208,11 @@
     }
   }
 
-  .card__smalmain,
-  .card__number {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 33px;
-    color: #000000;
-    padding-left: 19px;
-    margin-top: 0;
-    text-align: left;
-    margin-bottom: 22px;
-
-    @media(min-width: 768px) {
-      padding-left: 30px;
-    }
-
-    @media(min-width: 1728px) {
-      padding-left: 40px;
-    }
-  }
-
-  .card__formal {
-    @media(min-width: 768px) {
-      font-size: 64px;
-      text-align: center;
-      padding-left: 51px;
-      line-height: 88px;
-      width: 668px;
-    }
-
-    @media(min-width: 1728px) {
-      text-align: left;
-      padding-left: 79px;
-      width: 710px;
-    }
-  }
-
-  .card__flex {
-    margin-bottom: 23px;
-    text-align: left;
-
-    @media(min-width: 768px) {
-      margin-bottom: 51px;
-      display: flex;
-    }
-
-    @media(min-width: 1728px) {
-      margin-bottom: 33px;
-    }
-
-    .card__number {
-      @media(min-width: 768px) {
-        padding-left: 40px;
-        font-size: 48px;
-      }
-    }
-
-    .card__number.card__downum {
-      @media(min-width: 768px) {
-        font-size: 24px;
-        padding-left: 30px;
-        line-height: 33px;
-      }
-
-      @media(min-width: 1728px) {
-        padding-left: 40px;
-      }
-    }
-
-    .card__number.card__crossed {
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 24px;
-      padding-left: 20px;
-      text-decoration: line-through;
-
-      @media(min-width: 768px) {
-        padding-left: 68px;
-        font-size: 24px;
-      }
-
-      @media(min-width: 1728px) {
-        padding-left: 44px;
-      }
-    }
-
-    .card__number.card__crossed.card__cls {
-      @media(min-width: 768px) {
-        padding-left: 20px;
-        line-height: 24px;
-        font-size: 18px;
-      }
-
-      @media(min-width: 1728px) {
-        padding-left: 28px;
-      }
-    }
-  }
-
-  &__flex.card__dwnflx {
-    @media(min-width: 768px) {
-      margin-bottom: 20px;
-    }
-  }
-
-  .card__tap {
-    @include clear-button;
-
-    width: 38px;
-    height: 38px;
-    background-color: #000000;
-    border-radius: 100%;
-    margin-left: 47px;
-    transform: translateY(-3px);
-    cursor: pointer;
-
-    @media(min-width: 768px) {
-      margin-left: 256px;
-      width: 65px;
-      height: 65px;
-    }
-
-    @media(min-width: 1728px) {
-      width: 118px;
-      height: 118px;
-      margin-left: 475px;
-      transform: translateY(-78px);
-    }
-
-    img {
-      width: 13px;
-      height: 13px;
-
-      @media(min-width: 768px) {
-        width: 23px;
-        height: 23px;
-      }
-
-      @media(min-width: 1728px) {
-        width: 43px;
-        height: 43px;
-      }
-    }
-  }
-
-  .card__tap.card__nar {
-    @media(min-width: 768px) {
-      margin-left: 80px;
-      width: 38px;
-      height: 38px;
-
-      img {
-        width: 13px;
-        height: 13px;
-
-        @media(min-width: 1728px) {
-          width: 21px;
-          height: 21px;
-        }
-      }
-    }
-
-    @media(min-width: 1728px) {
-      width: 58px;
-      height: 58px;
-      margin-left: 210px;
-      transform: translateY(-30px);
-    }
-  }
-
-  &__teal {
+  .best-sell__teal {
     padding: 17px 50px;
     font-size: 28px;
     font-weight: 600;
     line-height: 43px;
-    background-color: #000000;
-    color: #fff;
   }
 
 }
