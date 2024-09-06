@@ -1,0 +1,174 @@
+.card {
+
+  .card__smalmain,
+  .card__price {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 33px;
+    color: #000000;
+    padding-left: 19px;
+    margin-top: 0;
+    text-align: left;
+    margin-bottom: 22px;
+
+    @media(min-width: 768px) {
+      padding-left: 30px;
+    }
+
+    @media(min-width: 1728px) {
+      padding-left: 40px;
+    }
+  }
+
+  .card__smalmain-formal {
+    @media(min-width: 768px) {
+      font-size: 64px;
+      text-align: center;
+      padding-left: 51px;
+      line-height: 88px;
+      width: 668px;
+    }
+
+    @media(min-width: 1728px) {
+      text-align: left;
+      padding-left: 79px;
+      width: 710px;
+    }
+  }
+
+  &__flex {
+    margin-bottom: 23px;
+    text-align: left;
+
+    @media(min-width: 768px) {
+      margin-bottom: 51px;
+      display: flex;
+    }
+
+    @media(min-width: 1728px) {
+      margin-bottom: 33px;
+    }
+
+    .card__price {
+      @media(min-width: 768px) {
+        padding-left: 40px;
+        font-size: 48px;
+      }
+
+      @media(min-width: 1728px) {
+        padding-left: 83px;
+      }
+    }
+
+    .card__price.card__down {
+      @media(min-width: 768px) {
+        font-size: 24px;
+        padding-left: 30px;
+        line-height: 33px;
+      }
+
+      @media(min-width: 1728px) {
+        padding-left: 40px;
+      }
+    }
+  }
+
+  &__flex--bottom {
+    @media(min-width: 768px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__old-price {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-left: 20px;
+    text-decoration: line-through;
+
+    @media(min-width: 768px) {
+      padding-left: 20px;
+      font-size: 24px;
+    }
+
+    @media(min-width: 1728px) {
+      padding-left: 44px;
+    }
+  }
+
+  &__old-price-delete {
+    @media(min-width: 768px) {
+      padding-left: 20px;
+      line-height: 24px;
+      font-size: 18px;
+    }
+
+    @media(min-width: 1728px) {
+      padding-left: 28px;
+    }
+  }
+
+  &__tap {
+    @include clear-button;
+
+    width: 38px;
+    height: 38px;
+    background-color: #000000;
+    border-radius: 100%;
+    transform: translate(47px, -3px);
+    cursor: pointer;
+
+    @media(min-width: 768px) {
+      transform: translateX(300px);
+      width: 65px;
+      height: 65px;
+    }
+
+    @media(min-width: 1728px) {
+      width: 118px;
+      height: 118px;
+      margin-left: 475px;
+      transform: translateY(-78px);
+    }
+
+    img {
+      width: 13px;
+      height: 13px;
+
+      @media(min-width: 768px) {
+        width: 23px;
+        height: 23px;
+      }
+
+      @media(min-width: 1728px) {
+        width: 43px;
+        height: 43px;
+      }
+    }
+  }
+
+  &__tap-other {
+    @media(min-width: 768px) {
+      transform: translateX(85px);
+      width: 38px;
+      height: 38px;
+
+      img {
+        width: 13px;
+        height: 13px;
+
+        @media(min-width: 1728px) {
+          width: 21px;
+          height: 21px;
+        }
+      }
+    }
+
+    @media(min-width: 1728px) {
+      width: 58px;
+      height: 58px;
+      margin-left: 210px;
+      transform: translate(-15px, -30px);
+    }
+  }
+}
