@@ -51,7 +51,7 @@
 
     .card__price {
       @media(min-width: 768px) {
-        padding-left: 40px;
+        padding-left: 51px;
         font-size: 48px;
       }
 
@@ -60,7 +60,7 @@
       }
     }
 
-    .card__price.card__down {
+    .card__down {
       @media(min-width: 768px) {
         font-size: 24px;
         padding-left: 30px;
