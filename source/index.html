@@ -8,41 +8,137 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-     <nav class="main-nav">
+    <header class="main-nav">
       <div class="container main-nav__container">
         <a href="" class="main-nav__logo">
           <img src="img/slick.svg" alt="Логотип магазина Slick">
         </a>
 
-        <ul class="main-nav__ul">
-          <li class="main-nav__li">
-            <a>Главная</a>
-          </li>
-          <li class="main-nav__li">
-            <a>Магазин</a>
-          </li>
-          <li class="main-nav__li">
-            <a>Контакты</a>
-          </li>
-        </ul>
+        <nav class="main-nav__menu main-nav__menu--showed">
+          <button class="main-nav__closed">
+            <img src="img/close.svg" alt="Закрытие меню">
+          </button>
+          <ul class="main-nav__navigation">
+            <li class="main-nav__contact">
+              <a>Главная</a>
+            </li>
+            <li class="main-nav__contact">
+              <a>Магазин</a>
+            </li>
+            <li class="main-nav__contact">
+              <a>Контакты</a>
+            </li>
+          </ul>
 
-        <div class="main-nav__div-shop">
-          <button class="main-nav__btn">
+          <div class="main-nav__social">
+            <p>Следи за нами в социальных сетях:</p>
+            <ul class="main-nav__networks">
+              <li class="main-nav__socnet">
+                <a href="https://t.me/telegram">
+                  <img src="img/telegram.svg" alt="telegram">
+                </a>
+              </li>
+              <li class="main-nav__socnet">
+                <a href="https://vk.com/feed">
+                  <img src="img/vk.svg" alt="vk">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="main-nav__shop">
+          <button class="main-nav__search">
             <img src="img/find.svg" alt="Поиск" class="main-nav__img">
           </button>
-          <button class="main-nav__btn main-nav__btn-shop">
+          <button class="main-nav__basket">
             <img src="img/shop.svg" alt="Корзина" class="main-nav__img">
+            <span class="main-nav__pin">0</span>
           </button>
         </div>
 
-        <button class="main-nav__btn-burger">
+        <button class="main-nav__burger">
           <img src="img/burger.svg" alt="Иконка меню">
         </button>
-
-        <button class="main-nav__btn-close">
-          <img src="img/close.svg" alt="Закрытие меню">
-        </button>
       </div>
-     </nav>
+    </header>
+
+    <section class="cap">
+      <div class="container cap__container">
+        <div class="cap__title">
+          <div class="cap__main-set">
+            <h1 class="cap__heading">
+              <span class="cap__find">Найди свои</span>
+              <span class="cap__ideal">Идеальные</span>
+              <span class="cap__cross">Кроссы</span>
+            </h1>
+            <p class="cap__text">Какой-то супер-мотивирующий текст чтоб купили прям вообще всё</p>
+          </div>
+          <div class="cap__sentr">
+            <button class="cap__purchases button">За покупками</button>
+          </div>
+        </div>
+
+        <div class="cap__product cap__product--ultimate">
+          <img src="img/main-product.png" alt="Главный продукт">
+          <span class="cap__product-trend">Trendy Slick Pro</span>
+          <span class="cap__product-price">3999 р</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="best-sell">
+      <div class="container best-sell__container">
+        <h2 class="best-sell__head">Best Selling</h2>
+
+        <div class="best-sell__floor">
+          <button class="best-sell__male button">Мужские</button>
+          <button class="best-sell__female button button--transparent">Женские</button>
+        </div>
+
+        <div class="best-sell__option">
+          <ul class="best-sell__item">
+            <li class="best-sell__point best-sell__point--hot card">
+              <img src="img/grsneak.png" alt="серые сникеры" class="card__bigrow">
+              <h3 class="card__smalmain card__smalmain-formal">Slick formal sneaker shoe</h3>
+              <div class="card__flex">
+                <span class="card__price">2999 Р</span>
+                <span class="card__old-price">4999 Р</span>
+                <button class="card__tap">
+                  <img src="img/Arrow.svg" alt="cтрелка ссылка">
+                </button>
+              </div>
+            </li>
+
+            <li class="best-sell__layout best-sell__point--new card">
+              <img src="img/whtsneak.png" alt="белые сникеры">
+              <h3 class="card__smalmain">Slick sneaker shoe</h3>
+              <div class="card__flex card__flex--bottom">
+                <span class="card__price card__down">2999 Р</span>
+                <span class="card__old-price card__old-price-delete">3999 Р</span>
+                <button class="card__tap card__tap-other">
+                  <img src="img/Arrow.svg" alt="cтрелка ссылка">
+                </button>
+              </div>
+            </li>
+
+            <li class="best-sell__component card">
+              <img src="img/blksneak.png" alt="черные сникеры">
+              <h3 class="card__smalmain">Slick canvas shoe</h3>
+              <div class="card__flex best-sell__flex--bottom">
+                <span class="card__price card__down">2999 Р</span>
+                <span class="card__old-price card__old-price-delete">3999 Р</span>
+                <button class="card__tap card__tap-other">
+                  <img src="img/Arrow.svg" alt="cтрелка ссылка">
+                </button>
+              </div>
+            </li>
+          </ul>
+
+          <button class="best-sell__teal button">Показать Все</button>
+        </div>
+
+      </div>
+    </section>
   </body>
 </html>

@@ -1,0 +1,16 @@
+.button {
+  @include clear-button;
+
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #000;
+  border: 2px solid;
+  border-color: #000;
+  color: #fff;
+
+  &--transparent {
+    background-color: #fff;
+    border-color: rgba(0, 0, 0, .75);
+    color: rgba(0, 0, 0, .75);
+  }
+}
